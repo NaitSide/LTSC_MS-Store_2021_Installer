@@ -118,17 +118,17 @@ Microsoft.XboxIdentityProvider          12.45.6001.0
 
 ## Скриншоты
 
-### До установки
+### После установки
 ![version_before](screenshots/version_before.png)
-*версии пакетов до обновления*
+*версии пакетов после установки*
 
 ### Вкладка Deals -> 'Обновить сейчас'
 ![MS-Store_update-button](screenshots/MS-Store_update-button.png)
-*Microsoft Store готов к работе*
+*местонахождение кнопки обновить Microsoft Store*
 
-### После установки
+### После обновления
 ![version_after](screenshots/version_after.png)
-*Установленные компоненты и их версии*
+*Версии компонентов после обновления*
 
 
 
