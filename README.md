@@ -252,7 +252,7 @@ Packages/
 
 ## Автор
 
-**NaitSide** - 2025
+**NaitSide** - 2026
 
 Оригинальный проект: [kkkgo/LTSC-Add-MicrosoftStore](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
 
