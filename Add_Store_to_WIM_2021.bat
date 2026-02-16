@@ -5,23 +5,43 @@ title Вшивание Microsoft Store в WIM - NaitSide Custom Build
 :: Проверка прав администратора
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [ОШИБКА] Требуются права администратора!
-    echo Запустите скрипт правой кнопкой мыши -^> "Запуск от имени администратора"
+    cls
+    echo.
+    echo =========================================================
+    echo    [ОШИБКА] Требуются права администратора!
+    echo =========================================================
+    echo.
+    echo    Запустите скрипт правой кнопкой мыши
+    echo    -^> "Запуск от имени администратора"
+    echo.
+    echo =========================================================
     echo.
     pause
     exit /b
 )
 
-echo ====================================
-echo   Вшивание Microsoft Store в WIM
-echo   NaitSide Custom Build
-echo ====================================
+cls
 echo.
-echo Этот скрипт вошьет Microsoft Store
-echo и зависимости в смонтированный образ Windows.
-echo Разворачивай WIM на VHD через DISM++
+echo =========================================================
+echo    LTSC MS-Store 2021 Installer
+echo    Вшивание Microsoft Store в WIM-образ
+echo    NaitSide Custom Build
+echo =========================================================
 echo.
-echo ====================================
+echo    Этот скрипт установит в WIM-образ:
+echo.
+echo    • Microsoft Store и все зависимости
+echo    • Desktop App Installer (winget)
+echo    • Xbox Identity Provider
+echo    • Store Purchase App
+echo.
+echo    [!] Разворачивай WIM на диск через DISM++
+echo.
+echo =========================================================
+echo    GitHub: github.com/NaitSide/LTSC_MS-Store_2021_Installer
+echo =========================================================
+echo.
+pause
 
 :: Перейти в каталог скрипта и получить текущий путь
 pushd "%~dp0"
